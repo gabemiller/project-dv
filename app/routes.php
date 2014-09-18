@@ -18,8 +18,8 @@ if (Config::get('app.debug')) {
     });
 }
 
-Route::get('/',function(){
-   return View::make('cover'); 
+Route::get('/', function() {
+    return View::make('cover');
 });
 
 //Route::get('/', ['uses' => 'Site\HomeController@index', 'as' => 'fooldal']);
@@ -33,15 +33,11 @@ Route::get('/',function(){
  * Tanárosdi oldalamnak a statikus lapjai.
  * 
  */
-
-Route::group(array('domain' => '{sub}.divide.hu'), function()
-{
-
-    Route::get('/', function($sub)
-    {
-        
+Route::group(array('prefix' => 'admin'), function() {
+    
+    Route::get('/', function() {
+        return View::make('ik');
     });
-
 });
 
 
@@ -54,31 +50,31 @@ Route::group(array('domain' => '{sub}.divide.hu'), function()
  * A cms-hez tarozó menu-k. 
  * 
  */
-/*if (!Request::is('admin') && !Request::is('admin/*')) {
+/* if (!Request::is('admin') && !Request::is('admin/*')) {
 
-    Menu::make('mainMenu', function($menu) {
+  Menu::make('mainMenu', function($menu) {
 
-        $menu->add('Főoldal', array('route' => 'fooldal'));
+  $menu->add('Főoldal', array('route' => 'fooldal'));
 
-        $menu->add('Események', array('route' => 'esemenyek.index'));
+  $menu->add('Események', array('route' => 'esemenyek.index'));
 
-        $menu->add('Galériák', array('route' => 'galeriak.index'));
-        
-        $menu->add('Dokumentumok', array('route' => 'dokumentumok.index'));
+  $menu->add('Galériák', array('route' => 'galeriak.index'));
 
-        try {
-            \Divide\CMS\Page::getPagesForMenu($menu, 0);
+  $menu->add('Dokumentumok', array('route' => 'dokumentumok.index'));
 
-            foreach ($menu->all() as $item) {
-                if ($item->hasChildren()) {
-                    $item->append('<i class="fa fa-bars"></i>');
-                }
-            }
-        } catch (\Exception $e) {
-            
-        }
-    });
-}*/
+  try {
+  \Divide\CMS\Page::getPagesForMenu($menu, 0);
+
+  foreach ($menu->all() as $item) {
+  if ($item->hasChildren()) {
+  $item->append('<i class="fa fa-bars"></i>');
+  }
+  }
+  } catch (\Exception $e) {
+
+  }
+  });
+  } */
 
 
 /**
@@ -110,7 +106,7 @@ Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'before' => 'use
     Route::resource('hir', 'ArticleController');
 
     Route::resource('esemeny', 'EventController');
-    
+
     Route::resource('dokumentum', 'DocumentController');
 
     Route::resource('galeria', 'GalleryController');
