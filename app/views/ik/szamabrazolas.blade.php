@@ -1,4 +1,4 @@
-@extend('_ik.master')
+@extends('_ik.master')
 @section('content')
 <div class="table-responsive">
     <table class="table table-striped table-bordered text-center">

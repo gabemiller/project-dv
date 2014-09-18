@@ -1,4 +1,4 @@
-@extend('_ik.master')
+@extends('_ik.master')
 @section('content')
 <h2>Aritmetikai műveletek</h2>
 <ol>
