@@ -33,7 +33,7 @@ Route::get('/', function() {
  * Tanárosdi oldalamnak a statikus lapjai.
  * 
  */
-Route::group(array('prefix' => 'admin'), function() {
+Route::group(array('prefix' => 'ik'), function() {
     
     Route::get('/', function() {
         return View::make('ik');
