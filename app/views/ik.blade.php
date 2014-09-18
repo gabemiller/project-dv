@@ -5,33 +5,22 @@
 <h3>Információk</h3>
 
 <div class="alert alert-danger">
-    Írásbeli vizsga a vizsgaidőszakban.
+    Írásbeli vizsga a vizsgaidőszakban.<br>
+    <ul>
+        <li>a félév során nyújtott teljesítmény: két zárthelyi dolgozat eredménye, a vizsgajegy 40%-át adja</li>
+        <li>vizsgaidőszak: vizsgadolgozat, a vizsgajegy 60%-át adja</li>
+        <li>a félév során nyújtott teljesítmény: előadáson szerzett pontok</li>
+    </ul>
 </div>
 
 <p>{{HTML::link('http://www.inf.unideb.hu/~csernochmaria/bev_info/','Tantárgy honlapja',array('target'=>'_blank'))}}</p>
-<p>Tanuláshoz egy kis <a href="http://www.tankonyvtar.hu/hu/tartalom/tamop425/0046_bevezetes_az_informatikaba/index.html" target="_blank">jegyzet</a>. 
-    <a class="btn btn-sm btn-primary" href="http://ik.divide.hu/file/bevinfo.pdf" target="_blank"><span class="glyphicon glyphicon-download-alt"></span> letöltés <small>(pdf)</small></a><p>
-<p>Számrendszerek gyakorló <a href="feladatok.html">feladatsor</a> megoldással.</p>
-<p>Számábrázolás gyakorló <a href="szamabrazolas.html">feladatsor</a> megoldással + segédanyag.</p>
-<p>Aritmetikai feladatok gyakorló <a href="aritmetika.html">feladatsor</a> megoldással.</p>
-<p>UTF-8 kódoláshoz <a href="http://hu.wikipedia.org/wiki/UTF-8" target="_blank">anyag</a>.</p>
 
-<p>C programozáshoz egy kis <a href="http://mezeic.uw.hu/" target="_blank">segédanyag</a>.</p>
+<p>Számrendszerek gyakorló {{HTML::link('ik/szamrendszerek','feladatsor',array('target'=>'_blank'))}} megoldással.</p>
+<p>Számábrázolás gyakorló {{HTML::link('ik/szamabrazolas','feladatsor',array('target'=>'_blank'))}} megoldással + segédanyag.</p>
+<p>Aritmetikai feladatok gyakorló {{HTML::link('ik/aritmetika','feladatsor',array('target'=>'_blank'))}} megoldással.</p>
+
+<p>C programozáshoz egy kis {{HTML::link('http://mezeic.uw.hu/','segédanyag',array('target'=>'_blank'))}}</p>
 <p class="alert alert-danger">CodeBlocks <a href="http://www.codeblocks.org/downloads/26" target="_blank">letöltés</a> és itt ezt kell letölteni: <strong>codeblocks-12.11mingw-setup.exe</strong>. Fontos, hogy a mingw benne legyen, mert az a compiler.</p>
-
-<div class="alert alert-warning">
-    <h4 style="margin-top: 0 !important;">Elmélet</h4>
-    <p>2. Zárthelyi elméleti <a href="elmelet2.html">kérdéssor</a>.</p>
-</div>
-
-<hr />
-
-<h3>Zárthelyi dolgozat</h3>
-
-<div class="alert alert-danger">
-    
-</div>
-
 
 <hr />
 
