@@ -34,9 +34,21 @@ Route::get('/', function() {
  * 
  */
 Route::group(array('prefix' => 'ik'), function() {
-    
+
     Route::get('/', function() {
         return View::make('ik');
+    });
+
+    Route::get('/aritmetika', function() {
+        return View::make('ik.aritmetika');
+    });
+
+    Route::get('/szamabrazolas', function() {
+        return View::make('ik.szamabrazolas');
+    });
+
+    Route::get('/szamrendszerek', function() {
+        return View::make('ik.szamrendszerek');
     });
 });
 
