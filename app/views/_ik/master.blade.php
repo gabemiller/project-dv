@@ -54,7 +54,7 @@
         @include('_ik.header')
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
                     <div class="well well-sm">
                         <h3>Molnár Gábor</h3>
                         <p>Email: {{HTML::link('mailto:gabormolnar92@gmail.com','gabormolnar92@gmail.com',array('target'=>'_blank'))}}</p>
@@ -66,7 +66,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-9"> 
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8"> 
 
                     @yield('content')
 
