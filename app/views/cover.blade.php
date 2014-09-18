@@ -5,7 +5,7 @@
         <meta charset="utf-8">
 
         <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
-        <title>{{Config::get('globals.title');}} - {{$title or ''}}</title>
+        <title>{{Config::get('globals.title');}}</title>
 
         <!--[if lt IE 9]>
             {{ HTML::script('//html5shim.googlecode.com/svn/trunk/html5.js'); }}
